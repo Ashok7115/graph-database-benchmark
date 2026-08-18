@@ -1,0 +1,17 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+
+# Large raw dataset
+*.gz
+
+# Python cache
+.pytest_cache/
+
+# OS files
+.DS_Store
+Thumbs.db

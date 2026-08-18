@@ -1,0 +1,7 @@
+database,workload,p50_ms,p95_ms
+CognoDB,1-hop traversal,262.505,275.157
+CognoDB,2-hop traversal,261.896,271.985
+CognoDB,3-hop traversal,263.657,273.267
+CognoDB,Point lookup,263.328,278.196
+CognoDB,Indexed lookup,262.221,280.617
+CognoDB,Aggregation,255.528,265.47
