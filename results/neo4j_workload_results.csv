@@ -1,0 +1,11 @@
+query,execution_time_seconds,records,status
+Q1_Count_Persons,0.075124,1,SUCCESS
+Q2_Count_Relationships,0.068765,1,SUCCESS
+Q3_Find_Person,0.072836,1,SUCCESS
+Q4_Find_Neighbors,0.100275,14,SUCCESS
+Q5_Neighbor_Count,0.080772,1,SUCCESS
+Q6_Two_Hop_Neighbors,0.082471,1,SUCCESS
+Q7_Three_Hop_Neighbors,0.096232,1,SUCCESS
+Q8_Most_Connected,0.202026,10,SUCCESS
+Q9_Relationship_Existence,0.081814,1,SUCCESS
+Q10_Short_Path,0.090856,1,SUCCESS

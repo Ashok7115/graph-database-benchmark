@@ -1,23 +1,36 @@
+import sys
+import os
+
+# Add project root to Python path
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
+
 from benchmark.db import create_driver
 
 
-def main():
+print("=" * 40)
+print("Neo4j Benchmark Connection Test")
+print("=" * 40)
+
+driver = None
+
+try:
     driver = create_driver()
 
-    try:
-        driver.verify_connectivity()
+    driver.verify_connectivity()
 
-        with driver.session() as session:
-            result = session.run(
-                "RETURN 'CognoDB connection successful' AS message"
-            )
-            record = result.single()
+    print()
+    print("Neo4j connection successful.")
+    print("Benchmark database connection is working.")
 
-            print(record["message"])
+except Exception as e:
+    print()
+    print("Neo4j connection failed.")
+    print()
+    print("Error:", e)
 
-    finally:
+finally:
+    if driver:
         driver.close()
-
-
-if __name__ == "__main__":
-    main()

@@ -1,0 +1,7 @@
+database,workload,p50_ms,p95_ms
+Neo4j,1-hop traversal,55.254,66.891
+Neo4j,2-hop traversal,57.015,71.762
+Neo4j,3-hop traversal,56.965,68.002
+Neo4j,Point lookup,55.477,63.264
+Neo4j,Indexed lookup,54.666,91.386
+Neo4j,Aggregation,55.235,73.672

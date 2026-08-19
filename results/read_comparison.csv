@@ -1,0 +1,7 @@
+workload,neo4j_p50_ms,cognodb_p50_ms,p50_difference_ms,p50_winner,neo4j_p95_ms,cognodb_p95_ms,p95_difference_ms,p95_winner
+1-hop traversal,55.254,262.505,207.251,Neo4j,66.891,275.157,208.266,Neo4j
+2-hop traversal,57.015,261.896,204.881,Neo4j,71.762,271.985,200.223,Neo4j
+3-hop traversal,56.965,263.657,206.692,Neo4j,68.002,273.267,205.265,Neo4j
+Point lookup,55.477,263.328,207.851,Neo4j,63.264,278.196,214.932,Neo4j
+Indexed lookup,54.666,262.221,207.555,Neo4j,91.386,280.617,189.231,Neo4j
+Aggregation,55.235,255.528,200.293,Neo4j,73.672,265.47,191.798,Neo4j
